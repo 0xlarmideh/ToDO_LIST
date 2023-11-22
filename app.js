@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 require("dotenv").config();
+const taskRoutes = require('./routes/tasksRoutes')
 // const methodOverride = require("method-override");
 const app = express();
 
@@ -21,6 +22,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/tasks',)
+app.use('/tasks', taskRoutes)
 
 //Task routes
