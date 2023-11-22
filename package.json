@@ -10,5 +10,10 @@
   },
   "engines": {
     "node": "18.x"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
   }
 }
